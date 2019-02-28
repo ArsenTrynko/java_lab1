@@ -7,54 +7,6 @@ public class Sensor {
     protected static int frequency;
     protected String color;
 
-
-    void SetName(String Name) {
-        this.name = Name;
-    }
-
-
-    void SetPrice(int Price) {
-        this.price = Price;
-    }
-
-    void SetType(String Type) {
-        this.type = Type;
-    }
-
-    void SetColor(String Color) {
-        this.color = Color;
-    }
-
-    void SetDescryption(String descryption) { this.descryption = descryption; }
-
-    void SetFrequency(int Frequency) {
-        this.frequency = Frequency;
-    }
-
-    String getName() {
-        return name;
-    }
-
-    String getdescryption() {
-        return descryption;
-    }
-
-    int getfrequency() {
-        return frequency;
-    }
-
-    int getPrice() {
-        return price;
-    }
-
-    String getType() {
-        return type;
-    }
-
-    String getColor() {
-        return color;
-    }
-
     public Sensor(String name, String type, String descryption) {
 
         this(name, type, descryption, null);
@@ -64,15 +16,53 @@ public class Sensor {
 
     }
 
-    public Sensor(String name, String type, String descryption, int price, int frequency, String color) {
-        SetName(name);
-        SetType(type);
-        SetDescryption(descryption);
-        SetPrice(price);
-        SetFrequency(frequency);
-        SetColor(color);
+    public Sensor(String name, String type, String descryption, int price, String color) {
+        setName(name);
+        setType(type);
+        setDescryption(descryption);
+        setPrice(price);
+        setColor(color);
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getDescryption() {
+        return descryption;
+    }
+
+    public void setDescryption(String descryption) {
+        this.descryption = descryption;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
 
     public static void printStaticElements() {
 
